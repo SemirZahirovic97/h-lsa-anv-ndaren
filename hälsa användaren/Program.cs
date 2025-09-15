@@ -4,12 +4,17 @@
     {
         static void Main(string[] args)
         {
-            SayHello("World");
-            Console.ReadLine();
+            Console.WriteLine("Vad heter du?");
+            string name = Console.ReadLine();
+
+            SayHello(name);
+
         }
-        static void SayHello(string name);
+        static void SayHello(string name)
         {
-        
+        Console.WriteLine($"Hej {name}, välkommen till programmet!" );
+            }
+}
 
     }
-}
+
